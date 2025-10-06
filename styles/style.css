@@ -1,4 +1,4 @@
-@import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">');
 
 * {
     margin: 0;
@@ -8,19 +8,17 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     color: #fff;
     text-align: center;
 }
 
 
+/*Primera parte*/
 
 header {
-    background-color: #222;
-    height: auto;
-    width: auto;
-    padding: 20px 80px;
+    background-color: #333;
+    padding: 19px 80px 15px;
 }
 
 .headeruno {
@@ -29,40 +27,53 @@ header {
     align-items: center;
 }
 
-.headeruno img {
-    width: 120px;
-    height: 60px;
+.logo {
+    height: 62px;
     cursor: pointer;
 }
 
-.imgdos {
-    width: 50px;
-    height: 50px;
+.busca {
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.busca:hover {
+    opacity: 1;
 }
 
 
+/*Segunda parte*/
 
 .secdos {
     background: url("../assets/img/background.png") no-repeat center center/cover;
     display: flex;
-    text-align: left;
-    padding: 110px 80px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 120px 80px;
+    height: 96vh;
 }
 
 .pardos {
-    width: 550px;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    gap: 10px;
 }
 
 .pardos h1 {
-    font-size: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 115px;
     font-weight: 100;
-    margin-bottom: 10px;
 }
 
 .pardos p {
     font-size: 30px;
-    margin-bottom: 20px;
+    width: 580px;
+    text-align: start;
+    opacity: 0.8;
 }
 
 .pardos button {
@@ -74,125 +85,174 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.pardos button:hover {
+    background-color: #e05500;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.pardos button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
+/*Tercera parte*/
 
 .sectres {
     background-color: #ff6600;
-    padding: 60px 20px;
-    color: #fff;
-    align-items: center;
+    text-align: center;
+    padding: 100px;
+    justify-items: center;
 }
 
 .sectre {
-    width: 800px;
-    margin: 0 auto;
-    align-items: center;
+    width: auto;
 }
 
-.sectres h2 {
-    font-size: 60px;
-    margin-bottom: 25px;
-    margin-top: 30px;
+.sectre h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    letter-spacing: -5px;
+    margin-bottom: 40px;
 }
 
-.sectres p {
-    font-size: 30px;
-    margin-bottom: 80px;
+.sectre p {
+    font-size: 25px;
+    margin-bottom: 50px;
 }
 
 .cartres {
     display: flex;
     justify-content: center;
     gap: 55px;
-    flex-wrap: wrap;
 }
 
 .cart {
     background-color: #333;
+    color: white;
     width: 350px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
 .cart img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .cart h3 {
-    margin: 15px 0 5px;
-    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    margin: 35px 0 20px;
 }
 
 .cart p {
-    font-size: 20px;
+    font-size: 23px;
+    margin: 0 15px 20px;
+    opacity: 0.7;
     margin-bottom: 30px;
 }
 
+.cart:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
+
+/*Cuarta parte*/
 
 .seccuarto {
-    background-color: #333;
+    background-color: #2a2a2a;
     padding: 60px 20px;
+    text-align: center;
 }
 
 .secuar {
-    width: 800px;
-    margin: 0 auto;
-    align-items: center;
+    width: auto;
 }
 
-.seccuarto h2 {
-    font-size: 60px;
-    margin-bottom: 25px;
-    margin-top: 30px;
+.secuar h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: -5px;
+    margin-bottom: 40px;
 }
 
-.seccuarto p {
-    font-size: 30px;
-    margin-bottom: 80px;
+.secuar p {
+    font-size: 25px;
+    margin: 0 auto 80px auto;
 }
 
 .carcuartas {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 55px;
 }
 
 .carc {
     background-color: #ff6600;
-    width: 350px;
-    padding: 100px;
+    width: 330px;
     border-radius: 6px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carcs {
-    width: 300px;
+.carc:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.carc img {
+    width: 110px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .carc h3 {
-    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .carc p {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 25px;
 }
 
 .carc button {
-    display: inline-block;
-    background-color: #222;
+    background-color: #1c1c1c;
     color: #fff;
     border: none;
-    padding: 10px 25px;
-    font-size: 14px;
+    padding: 15px;
+    width: 100%;
+    font-size: 25px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.carc button:hover {
+    background-color: #000;
 }
 
 
+/*Quinta parte*/
 
 .footer {
     background-color: #ff6600;
@@ -202,5 +262,184 @@ header {
 
 .footer p {
     margin: 20px;
-    font-size: 25px;
+    font-size: 22px;
+    opacity: 0.65;
+}
+
+
+
+
+
+@media (max-width: 1279px) {
+
+    .cartres {
+        flex-wrap: wrap;
+    }
+
+    .cart {
+        width: 330px;
+    }
+
+
+    .carcuartas {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 920px) {
+
+    .sectres {
+        padding: 60px 20px;
+    }
+
+    .cartres {
+        gap: 30px;
+    }
+    
+    .cart {
+        width: 340px;
+    }
+
+
+    .carcuartas {
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .secdos {
+        padding: 20px 30px;
+        height: 74vh;
+    }
+
+    .pardos h1{
+        font-size: 60px;
+    }
+
+    .pardos p {
+        font-size: 20px;
+        width: auto;
+    }
+
+
+    .pardos button {
+        font-size: 15px;
+        padding: 15px 40px;
+    }
+
+
+    .sectre h2 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .sectre p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .cartres {
+        gap: 25px;
+    }
+
+    .cart {
+        width: 200px;
+    }
+
+    .cart h3 {
+        font-size: 27px;
+        margin: 25px 0 10px;
+    }
+
+    .cart p {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+
+    .secuar h2 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .secuar p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carcuartas {
+        gap: 20px;
+    }
+
+    .carc {
+        width: 210px;
+        padding: 35px 15px;
+    }
+
+    .carc img {
+        width: 90px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .carc h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .carc p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .carc button {
+        padding: 10px;
+        font-size: 20px;
+        width: 85%;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer p {
+        margin: 15px;
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 19px 50px 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .busca {
+        height: 20px;
+    }
+
+    .secdos {
+        padding: 20px 30px;
+    }
+
+
+    .carc {
+        padding: 30px 10px;
+    }
+
+
+    .footer p {
+        font-size: 17px;
+    }
 }
